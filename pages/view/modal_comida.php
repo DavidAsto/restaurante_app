@@ -1,4 +1,5 @@
 <!-- Modal para BORRAR -->
+<<<<<<< HEAD
 <div class="modal fade" id="md_borrar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -6,6 +7,14 @@
                 <h4 class="modal-title text-danger" id="staticBackdropLabel">Borrar Producto</h4>
                 <button type="button" class="btn btn-light" data-dismiss="modal" aria-label="Close"><i class="fa-solid fa-x" style="color: #000000;"></i></button>
 
+=======
+<div class="modal fade" id="md_borrar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-danger" id="staticBackdropLabel">Borrar</h4>
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
             </div>
             <div class="modal-body mborrar">
                 <div>
@@ -16,18 +25,31 @@
                 </div>
             </div>
             <div class="modal-footer">
+<<<<<<< HEAD
                 <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+=======
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
                 <a href="#" class="btn_borrar btn btn-danger">Borrar</a>
             </div>
         </div>
     </div>
 </div>
 <!-- Modal para la INFORMACION -->
+<<<<<<< HEAD
 <div class="modal fade" id="md_mostrar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header" style="background-color: #ffb347;">
                 <h4 class="modal-title" id="staticBackdropLabel">  Informacion de la comida</h4>
+=======
+<div class="modal fade" id="md_mostrar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #ffb347;">
+                <h4 class="modal-title" id="staticBackdropLabel">  Informacion</h4>
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
             </div>
             <div class="modal-body justify-content-center">
                 <div class="row border border-1 rounded px-3 py-4 my-1 mx-1">
@@ -54,6 +76,7 @@
                 </div>
             </div>
             <div class="modal-footer">
+<<<<<<< HEAD
                     <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
                 </div>
         </div>
@@ -136,6 +159,13 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
     </div>
 </div>
 
+=======
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
 <!--MOdal para CONSULTAR-->
 <div class="modal fade" id="md_consultar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -182,13 +212,97 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     </div>
                 </div>
                 <div class="modal-footer">
+<<<<<<< HEAD
                     <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+=======
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-dismiss="modal">Cerrar</button>
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
                 </div>
             </form>
         </div>
     </div>
 </div>
 
+<<<<<<< HEAD
+=======
+<!-- Modal para EDITAR -->
+<div class="modal fade" id="md_editar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form id="frm_editar_com" name="frm_editar_com" method="post" action="../controller/ctr_grabar_com.php" autocomplete="off">
+                <input type="hidden" id="txt_tipo" name="txt_tipo" value="e"/>
+                <div class="modal-header" style="background-color: #ffb347;">
+                    <h4 class="modal-title" id="staticBackdropLabel">  Editar</h4>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <div class="row border border-1 rounded px-4 py-4 my-1 mx-1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="txt_com_cod" class="form-label">Código</label>
+                                <input type="text" class="form-control" id="txt_com_cod" name="txt_com_cod" placeholder ="Código" maxlength="5" readonly value=""/>
+                            </div>
+                            <div class="col-md-8">
+                                <label for="txt_com_nom" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="txt_com_nom" name="txt_com_nom" placeholder ="Comida" maxlength="50" value=""/>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="txt_com_dis" class="form-label mt-2">Disponible</label>
+                                <input type="text" class="form-control" id="txt_com_dis" name="txt_com_dis" placeholder ="Si/no" maxlength="2" value=""/>
+                            </div>
+                            <div class="col-md-8">
+                                <label for="txt_com_pre" class="form-label mt-2">Precio</label>
+                                <input type="number" step="0.1" class="form-control" id="txt_com_pre" name="txt_com_pre" placeholder ="Precio" maxlength="10" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn" style="background-color: #ffb347;" id="btn_registrar_com" name="btn_registrar_com">Actualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal para REGISTRAR -->
+<div class="modal fade" id="md_registrar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form id="frm_registrar_com" name="frm_registrar_com" method="post" action="../controller/ctr_grabar_com.php" autocomplete="off">
+                <input type="hidden" id="txt_tipo" name="txt_tipo" value="r"/>
+                <div class="modal-header" style="background-color: #ffb347;">
+                    <h4 class="modal-title" id="staticBackdropLabel">Registrar</h4>
+                </div>
+                <div class="modal-body justify-content-center">
+                    <div class="row border border-1 rounded px-4 py-4 my-1 mx-1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="txt_com_nom" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="txt_com_nom" name="txt_com_nom" placeholder ="Comida" maxlength="50" value=""/>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="txt_com_dis" class="form-label mt-2">Disponible</label>
+                                <input type="text" class="form-control" id="txt_com_dis" name="txt_com_dis" placeholder ="Si/no" maxlength="2" value=""/>
+                            </div>
+                            <div class="col-md-8">
+                                <label for="txt_com_pre" class="form-label mt-2">Precio</label>
+                                <input type="number" step="0.1" class="form-control" id="txt_com_pre" name="txt_com_pre" placeholder ="Precio" maxlength="10" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn" style="background-color: #ffb347;" id="btn_registrar_com" name="btn_registrar_com">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal para FILTRAR -->
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
 <div class="modal fade" id="md_filtrar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -210,11 +324,19 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 </div>
             </form>
             <div class="modal-footer">
+<<<<<<< HEAD
                 <button type="button" id="btn_fcerrar" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+=======
+                <button type="button" id="btn_fcerrar" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
             </div>
         </div>
     </div>
 </div>
+<<<<<<< HEAD
+=======
+<!-- Modal para ERROR -->
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
 <div class="modal fade" id="md_error"  tabindex="-1"
 aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-dialog-centered">
@@ -228,7 +350,11 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 </div>
             </div>
             <div class="modal-footer">
+<<<<<<< HEAD
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Ok</button>
+=======
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Ok</button>
+>>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
             </div>
         </div>
     </div>

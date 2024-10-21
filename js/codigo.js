@@ -1,9 +1,13 @@
 // Iniciar los eventos en JQuery    
+
 $(function() {  
     // Define los eventos a trabajar en la página
 
     // Evento click del botón mostrar de la página listar_comida.php
     // Acción al presionar el botón de INFORMACIÓN
+
+
+$(function(){  
 
     setTimeout(() => {
         const toast = document.querySelector('.toast1');
@@ -14,8 +18,17 @@ $(function() {
             }, 500); // Espera que termine la transición
         }
     }, 3000);
+
     
     $(".reg_comida .btn_mostrar").click(function(e) {
+
+
+    //Define los eventos a trabajar en la pagina
+    //Evento click del boton mostrar de la pagina listar_comida.php
+
+    //Acción al presionar el botón de INFORMACION
+    $(".reg_comida .btn_mostrar").click(function(e){
+
         let codcom = $(this).closest(".reg_comida").children(".codcom").text();
         let com = $(this).closest(".reg_comida").children(".com").text();
         let cd = $(this).closest(".reg_comida").children(".cd").text();
@@ -26,10 +39,19 @@ $(function() {
         $("#md_mostrar .lbl_cd").text(cd);
         $("#md_mostrar .lbl_cp").text(cp);
 
+
         $("#md_mostrar").modal("show");
     });
 
     // Acción al presionar el botón de ELIMINAR
+
+        //$("#md_mostrar .btn_mostrar").attr("href", "../controller/ctr_mostrar_com.php?codcom=" + codcom);
+
+        $("#md_mostrar").modal("show");
+    });
+
+    //Acción al presionar el botón de ELIMINAR
+
     $(".reg_comida .btn_eliminar").click(function(e){
         let codcom = $(this).closest(".reg_comida").children(".codcom").text();
         let com = $(this).closest(".reg_comida").children(".com").text();
@@ -41,9 +63,43 @@ $(function() {
 
         $("#md_borrar").modal("show");
     });
+
      //ACCION PARA CONSULTAR 
 
      $(".reg_con_fil .btn_consultar").click(function(e){
+
+
+    //Acción al presionar el botón de EDITAR
+    $(".reg_comida .btn_editar").click(function(e){
+        let codcom = $(this).closest(".reg_comida").children(".codcom").text();
+        let com = $(this).closest(".reg_comida").children(".com").text();
+        let cd = $(this).closest(".reg_comida").children(".cd").text();
+        let cp = $(this).closest(".reg_comida").children(".cp").text();
+
+        document.getElementById('txt_com_cod').value = codcom;
+        document.getElementById('txt_com_nom').value = com;
+        document.getElementById('txt_com_dis').value = cd;
+        document.getElementById('txt_com_pre').value = cp;
+
+        //$("#md_editar .btn_editar").attr("href", "../controller/ctr_mostrar_com.php?codcom=" + codcom);
+
+        $("#md_editar").modal("show");
+    });
+    
+    //Acción al presionar el botón de Registrar
+    $(".reg_con_fil .btn_registrar").click(function(e){
+        $("#md_registrar").modal("show");
+    });
+
+    //Acción al presionar el botón de Filtrar
+    $(".reg_con_fil .btn_filtrar").click(function(e){
+        $("#md_filtrar").modal("show");
+    });
+
+    //ACCION PARA CONSULTAR 
+
+    $(".reg_con_fil .btn_consultar").click(function(e){
+
         $("#md_consultar").modal("show");
 
         $("#frm_consultar_com #txt_com_nom").focusout(function(e){
@@ -96,6 +152,7 @@ $(function() {
     });
 
 
+
     // Acción al presionar el botón de EDITAR
 
        //Acción al presionar el botón de EDITAR
@@ -130,6 +187,7 @@ $(function() {
     });
     
     
+
     //ACCION PARA FILTRAR
 
     $("#frm_filtrar_com #btn_filtrar").on("click",function(e){
@@ -159,6 +217,7 @@ $(function() {
         document.getElementById('txt_valor').value = "";
         $("#tabla").html("");
     })
+
 
     // Acción al presionar el botón de INFORMACIÓN para los clientes
     $(".reg_cliente .btn_mostrar_cliente").click(function(e) {
@@ -444,4 +503,12 @@ $(".reg_categoria .btn_eliminar_categoria").click(function(e) {
 
 
     
+});
+
+    /*$(".reg_comida .btn_mostrar").click(function(e){
+        let codcom = $(this).closest(".reg_comida").children(".codcom").text();
+        
+        location.href = "mostrar_comida.php?codcom=" + codcom;
+    });*/
+});
 });
