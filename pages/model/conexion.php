@@ -1,21 +1,13 @@
 <?php
 
     class Conexion {
-
-        //CONEXION EN AZURE
-
         //CONEXION EN AZURE
         private $host = "serverg5-db.mysql.database.azure.com";
         private $username = "dasto";
         private $password = "Chaufa123";
-        private $base_datos = "proyecto_db";
+        private $base_datos = "tfinal";
 
-        //CONEXION LOCAL
-
-
-
-        
-
+      
 
         //$dsn = "mysql:host=$host;dbname=$base_datos;charset=utf8mb4";
 

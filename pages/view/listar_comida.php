@@ -16,34 +16,19 @@
             $crudcomida = new CRUDComida();
             $rs_com = $crudcomida->ListarComida();
         ?>
-<<<<<<< HEAD
         <div class="container mt-3">
             <header>
-=======
-        <!--<div class="toast1 bg-success d-flex align-items-center ps-4 auto-close"><i class="fa-solid fa-check pe-3" style="color: #ffffff;"></i>Proceso realizado correctamente</div>-->
-        <div class="container mt-3">
-            <header>
-                <?php
-                    if (isset($_SESSION['mensaje'])) {
-                        echo '<div class="toast1 bg-success d-flex align-items-center ps-4 auto-close"><i class="fa-solid fa-check pe-3" style="color: #ffffff;"></i>' . $_SESSION['mensaje'] . '</div>';
-                        unset($_SESSION['mensaje']); // Limpia el mensaje después de mostrarlo
-                    }
-                ?>
->>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
                 <h2>
                     <i class="fas fa-list-alt"></i> Lista de comidas
                 </h2>
                 <hr/>
             </header>
-<<<<<<< HEAD
             <?php
                     if (isset($_SESSION['mensaje'])) {
                         echo '<div class="toast1 bg-success d-flex align-items-center ps-4 auto-close"><i class="fa-solid fa-check t-text" style="color: #ffffff;"></i>' . $_SESSION['mensaje'] . '</div>';
                         unset($_SESSION['mensaje']); // Limpia el mensaje después de mostrarlo
                     }
                 ?>
-=======
->>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
             <nav>
                 <div class="reg_con_fil btn-group" role="group">
                     <button class="btn_registrar btn btn-outline-dark">
@@ -62,11 +47,7 @@
                     <div class="row justify-content-center mt-3">
                         <div class="col-12">
                             <table class="table table-hover">
-<<<<<<< HEAD
                                 <thead>
-=======
-                                <thead class="table-warning">
->>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
                                     <tr>
                                         <th class="theader" scope="col">ID</th>
                                         <th class="theader" scope="col">Nombre</th>

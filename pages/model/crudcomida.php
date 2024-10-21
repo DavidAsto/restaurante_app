@@ -18,7 +18,6 @@
             return $arr_com;
         }
 
-<<<<<<< HEAD
         public function ConsultarComidaPorCodigo($cod_com) {
             $arr_com = null;
 
@@ -42,8 +41,6 @@
 
             echo json_encode($arr_com);
         }
-=======
->>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
         public function BorrarComida($cod_com){
             try{
                 $cn = $this->Conectar();
@@ -102,36 +99,7 @@
                 die($ex->getMessage());
             }
         }
-<<<<<<< HEAD
        
-=======
-
-        public function ConsultarComidaPorCodigo($cod_com) {
-            $arr_com = null;
-
-            $cn = $this->Conectar(); 
-
-            $sql = "call sp_mostrar_comida_por_codigo(:cod_com);";
-
-            $snt = $cn->prepare($sql);
-
-            $snt->bindParam(":cod_com", $cod_com, PDO::PARAM_STR, 5);
-
-            $snt->execute();
-
-            $nr = $snt->rowCount();
-
-            if($nr>0){
-                $arr_com = $snt->fetch(PDO::FETCH_OBJ);
-            }
-
-            $cn = null;
-
-            echo json_encode($arr_com);
-        }
-
-
->>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
         public function FiltrarComida($valor){
             $arr_com = null;
 
@@ -170,10 +138,7 @@
                     echo "<td>".$com->comida_nombre."</td>";
                     echo "<td>".$com->comida_disponibilidad."</td>";
                     echo "<td>".$com->comida_precio."</td>";
-<<<<<<< HEAD
                     
-=======
->>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
                     echo "</tr>";
                 }
                 echo "</table>";
@@ -185,11 +150,8 @@
             }
             $cn = null; 
         }
-<<<<<<< HEAD
 
     
         
-=======
->>>>>>> 5ae995f82bb435f662c96f6f8eeaca5753473ab3
     }
 ?>
